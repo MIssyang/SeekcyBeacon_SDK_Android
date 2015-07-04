@@ -5,7 +5,7 @@
 Seekcy Beacon SDK for Android是一个二次开发使用的库，以便与iBeacons进行互动。
 该SDK系统要求Android4.3及以上，设备蓝牙硬件为BLE4.0及以上。
 
-[Seekcy SDK for iOS]()这是IOS SDK链接地址。
+[Seekcy SDK for iOS](https://github.com/Seekcy/SeekcyBeacon_SDK_IOS)这是IOS SDK链接地址。
 
 SDK包括的功能:
 
@@ -15,7 +15,7 @@ SDK包括的功能:
 
 SDK API文档: 
 
- - [API文档](http://seekcy.github.io/SeekcyBeacon_SDK_Android/blob/master/Documents/SDK_API/index.html)
+ - [API文档](http://seekcy.github.io/SeekcyBeacon_SDK_Android/index.html)
 
 SDK 示例工程: 
 
