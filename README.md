@@ -15,11 +15,11 @@ SDK包括的功能:
 
 SDK API文档: 
 
- - [API文档]()
+ - [API文档](http://seekcy.github.io/SeekcyBeacon_SDK_Android/blob/master/Documents/SDK_API/index.html)
 
 SDK 示例工程: 
 
-- [示例工程]()
+- [示例工程](https://github.com/Seekcy/SeekcyBeacon_SDK_Android/tree/master/SeekcyBeaconSDKDemo)
 
 公司官网:
 
