@@ -29,7 +29,7 @@ public final class R {
         public static final int ic_launcher=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f08005d;
+        public static final int action_settings=0x7f08005e;
         public static final int config_command=0x7f08004f;
         public static final int config_device_name=0x7f080036;
         public static final int config_device_name_view=0x7f080035;
@@ -115,32 +115,36 @@ public final class R {
         public static final int config_uuid_view1=0x7f080002;
         public static final int config_uuid_view2=0x7f080012;
         public static final int config_uuid_view3=0x7f080022;
-        public static final int device_detail=0x7f080059;
-        public static final int device_text=0x7f080058;
-        public static final int device_version=0x7f08005a;
+        public static final int device_detail=0x7f08005a;
+        public static final int device_text=0x7f080059;
+        public static final int device_version=0x7f08005b;
         public static final int listview_scan=0x7f080057;
         public static final int rl1=0x7f080053;
-        public static final int spinner_broadcast_id_view=0x7f08005b;
-        public static final int spinner_broadcast_line=0x7f08005c;
+        public static final int spinner_broadcast_id_view=0x7f08005c;
+        public static final int spinner_broadcast_line=0x7f08005d;
         public static final int state_info=0x7f080000;
+        public static final int text_view=0x7f080058;
     }
     public static final class layout {
         public static final int activity_config=0x7f030000;
         public static final int activity_config_single_id=0x7f030001;
         public static final int activity_main=0x7f030002;
-        public static final int listview_scan=0x7f030003;
-        public static final int spinner_broadcast_id=0x7f030004;
+        public static final int activity_monitor=0x7f030003;
+        public static final int listview_scan=0x7f030004;
+        public static final int spinner_broadcast_id=0x7f030005;
     }
     public static final class menu {
         public static final int config=0x7f070000;
         public static final int main=0x7f070001;
-        public static final int test1=0x7f070002;
+        public static final int monitor=0x7f070002;
+        public static final int test1=0x7f070003;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050002;
         public static final int title_activity_config=0x7f050003;
+        public static final int title_activity_monitor=0x7f050005;
         public static final int title_activity_test1=0x7f050004;
     }
     public static final class style {

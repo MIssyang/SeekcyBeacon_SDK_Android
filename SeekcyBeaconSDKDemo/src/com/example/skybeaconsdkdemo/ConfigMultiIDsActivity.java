@@ -530,7 +530,7 @@ public class ConfigMultiIDsActivity extends Activity {
 			@Override
 			public void onDisconnected() {
 				// TODO Auto-generated method stub
-				setDialog("提示", "连接断开", true);
+				setDialog("鎻愮ず", "杩炴帴鏂紑", true);
 			}
 
 			@Override
@@ -576,7 +576,7 @@ public class ConfigMultiIDsActivity extends Activity {
 					}
 				});
 
-				setDialog("提示", "连接失败", true);
+				setDialog("鎻愮ず", "杩炴帴澶辫触", true);
 			}
 		};
 		skyBeaconCommunication = new SKYBeaconCommunication(this);
@@ -596,7 +596,7 @@ public class ConfigMultiIDsActivity extends Activity {
 	private void setDialog(String title, String info, final boolean isFinish) {
 		Dialog dialog = new AlertDialog.Builder(this).setTitle(title)
 				.setMessage(info)
-				.setPositiveButton("确定", new OnClickListener() {
+				.setPositiveButton("纭畾", new OnClickListener() {
 
 					@Override
 					public void onClick(DialogInterface arg0, int arg1) {
@@ -628,7 +628,7 @@ public class ConfigMultiIDsActivity extends Activity {
 									// TODO Auto-generated method
 									// stub
 									stateInfo.setText("config success!");
-									setDialog("提示", "配置成功", true);
+									setDialog("鎻愮ず", "閰嶇疆鎴愬姛", true);
 								}
 							});
 						}

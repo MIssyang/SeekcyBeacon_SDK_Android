@@ -77,6 +77,7 @@ public class MainActivity extends Activity {
 		passcodeStr = mPreferences.getString("ENCRYPT_KEY", "");
 		encryptKey = (EditText) findViewById(R.id.config_encrypt_key);
 		encryptKey.setText(passcodeStr);
+		skyBeaconManager = new SKYBeaconManager(this);
 		if (passcodeStr != null && !passcodeStr.equals("")) {
 			skyBeaconManager.setBroadcastKey(passcodeStr);
 		}
@@ -99,9 +100,9 @@ public class MainActivity extends Activity {
 			public void afterTextChanged(Editable arg0) {
 				// TODO Auto-generated method stub
 				if (arg0.length() == 64 || arg0.length() == 0) {
-					// »ñµÃSharedPreferences µÄEditor¶ÔÏó
+					// é”Ÿæ–¤æ‹·é”ŸçµŠharedPreferences é”Ÿæ–¤æ‹·Editoré”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·
 					SharedPreferences.Editor editor = mPreferences.edit();
-					// ĞŞ¸ÄÊı¾İ
+					// é”Ÿç«é©æ‹·é”Ÿæ–¤æ‹·é”Ÿï¿½
 					editor.putString("ENCRYPT_KEY",
 							String.valueOf(encryptKey.getText()));
 					editor.commit();
@@ -159,7 +160,7 @@ public class MainActivity extends Activity {
 		listView = (ListView) findViewById(R.id.listview_scan);
 		leDeviceListAdapter = new LeDeviceListAdapter(this);
 		listView.setAdapter(leDeviceListAdapter);
-		// TODO ListAdapterµÄnotify¸üĞÂ±ØĞë¼õÂı£¬²»È»Ó°Ïìµã»÷ÊÂ¼ş
+		// TODO ListAdapteré”Ÿæ–¤æ‹·notifyé”Ÿæ–¤æ‹·é”Ÿé“°æ†‹æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·é”Ÿé¥ºæŒ¥å¸®æ‹·é”Ÿæ–¤æ‹·é”Ÿæ–¤æ‹·å½•é”Ÿï¿½
 		listView.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
@@ -191,8 +192,6 @@ public class MainActivity extends Activity {
 	}
 
 	private void startRanging() {
-		skyBeaconManager = new SKYBeaconManager();
-		skyBeaconManager.init(this);
 		skyBeaconManager.startScanService(new ScanServiceStateCallback() {
 
 			@Override

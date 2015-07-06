@@ -111,10 +111,10 @@ public class ConfigSingleIDActivity extends Activity {
 		});
 
 		mLedList = new ArrayList<String>();
-		mLedList.add("不变");
-		mLedList.add("关闭");
-		mLedList.add("打开");
-		mLedList.add("切换");
+		mLedList.add("涓嶅彉");
+		mLedList.add("鍏抽棴");
+		mLedList.add("鎵撳紑");
+		mLedList.add("鍒囨崲");
 		ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,
 				R.layout.spinner_broadcast_id, R.id.spinner_broadcast_id_view,
 				mLedList);
@@ -174,13 +174,13 @@ public class ConfigSingleIDActivity extends Activity {
 		}
 
 		if (skyBeacon.getLedState() == DefaultStaticValues.DEFAULT_SKY_BEACON_LED_STATE) {
-			ledState.setText("不变");
+			ledState.setText("涓嶅彉");
 		} else if (skyBeacon.getLedState() == 0) {
-			ledState.setText("关闭");
+			ledState.setText("鍏抽棴");
 		} else if (skyBeacon.getLedState() == 1) {
-			ledState.setText("打开");
+			ledState.setText("鎵撳紑");
 		} else if (skyBeacon.getLedState() == 2) {
-			ledState.setText("切换");
+			ledState.setText("鍒囨崲");
 		}
 	}
 
@@ -221,14 +221,14 @@ public class ConfigSingleIDActivity extends Activity {
 			skyBeaconConfig1.setLocked(0);
 		}
 
-		if (ledState.getText().toString().equals("不变")) {
+		if (ledState.getText().toString().equals("涓嶅彉")) {
 			skyBeaconConfig1
 					.setLedState(DefaultStaticValues.DEFAULT_SKY_BEACON_LED_STATE);
-		} else if (ledState.getText().toString().equals("关闭")) {
+		} else if (ledState.getText().toString().equals("鍏抽棴")) {
 			skyBeaconConfig1.setLedState(0);
-		} else if (ledState.getText().toString().equals("打开")) {
+		} else if (ledState.getText().toString().equals("鎵撳紑")) {
 			skyBeaconConfig1.setLedState(1);
-		} else if (ledState.getText().toString().equals("切换")) {
+		} else if (ledState.getText().toString().equals("鍒囨崲")) {
 			skyBeaconConfig1.setLedState(2);
 		}
 
@@ -241,7 +241,7 @@ public class ConfigSingleIDActivity extends Activity {
 			@Override
 			public void onDisconnected() {
 				// TODO Auto-generated method stub
-				setDialog("提示", "连接断开", true);
+				setDialog("鎻愮ず", "杩炴帴鏂紑", true);
 			}
 
 			@Override
@@ -287,7 +287,7 @@ public class ConfigSingleIDActivity extends Activity {
 					}
 				});
 
-				setDialog("提示", "连接失败", true);
+				setDialog("鎻愮ず", "杩炴帴澶辫触", true);
 			}
 		};
 		skyBeaconCommunication = new SKYBeaconCommunication(this);
@@ -306,7 +306,7 @@ public class ConfigSingleIDActivity extends Activity {
 	private void setDialog(String title, String info, final boolean isFinish) {
 		Dialog dialog = new AlertDialog.Builder(this).setTitle(title)
 				.setMessage(info)
-				.setPositiveButton("确定", new OnClickListener() {
+				.setPositiveButton("纭畾", new OnClickListener() {
 
 					@Override
 					public void onClick(DialogInterface arg0, int arg1) {
@@ -338,7 +338,7 @@ public class ConfigSingleIDActivity extends Activity {
 									// TODO Auto-generated method
 									// stub
 									stateInfo.setText("config success!");
-									setDialog("提示", "配置成功", true);
+									setDialog("鎻愮ず", "閰嶇疆鎴愬姛", true);
 								}
 							});
 						}

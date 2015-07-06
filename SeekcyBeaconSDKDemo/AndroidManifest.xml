@@ -40,6 +40,10 @@
 
         <activity android:name="com.example.skybeaconsdkdemo.ConfigMultiIDsActivity" />
         <activity android:name="com.example.skybeaconsdkdemo.ConfigSingleIDActivity" />
+        <activity
+            android:name="com.example.skybeaconsdkdemo.MonitorActivity"
+            android:label="@string/title_activity_monitor" >
+        </activity>
     </application>
 
 </manifest>

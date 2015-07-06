@@ -115,9 +115,9 @@ public class LeDeviceListAdapter extends BaseAdapter {
 		iBeaconView beacon = mLeDevices.get(i);
 		viewHolder.deviceText.setText(beacon.mac);
 		if (beacon.isMultiIDs) {
-			viewHolder.deviceVersion.setText("∂‡");
+			viewHolder.deviceVersion.setText("Â§ö");
 		} else {
-			viewHolder.deviceVersion.setText("µ•");
+			viewHolder.deviceVersion.setText("Âçï");
 		}
 		viewHolder.deviceDetail.setText(beacon.detailInfo);
 		return view;
