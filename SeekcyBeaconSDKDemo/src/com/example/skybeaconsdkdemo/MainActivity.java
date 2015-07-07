@@ -114,7 +114,7 @@ public class MainActivity extends Activity {
 		mKeyList = new ArrayList<String>();
 		mKeyList.add("");
 		mKeyList.add("");
-		mKeyList.add("A5B5C146ADA7291E7FF5579539C04181B2E3F58C232641D741D03EED5932409D");
+		mKeyList.add("1111111111111111222222222222222233333333333333334444444444444444");
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 				R.layout.spinner_broadcast_id, R.id.spinner_broadcast_id_view,
 				mKeyList);
