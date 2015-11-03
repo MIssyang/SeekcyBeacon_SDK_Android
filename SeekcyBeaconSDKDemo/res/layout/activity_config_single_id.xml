@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:scrollbars="vertical" >
 
@@ -21,7 +21,6 @@
             android:id="@+id/config_rl1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/state_info"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="10dp" >
@@ -32,8 +31,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="7dp"
-                android:text="UUID "
-                android:textSize="15dp" />
+                android:text="@string/UUID"
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/config_uuid1"
@@ -41,9 +40,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:layout_toRightOf="@id/config_uuid_view1"
-                android:hint="00000000-0000-0000-0000-000000000000"
+                android:hint="@string/UUIDHint"
                 android:singleLine="true"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
             <Spinner
                 android:id="@+id/config_uuid_spinner1"
@@ -53,17 +52,17 @@
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="4dp"
                 android:clickable="true"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <LinearLayout
             android:id="@+id/config_rl2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/config_rl1"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
+            android:baselineAligned="false"
             android:orientation="horizontal" >
 
             <RelativeLayout
@@ -78,8 +77,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginTop="7dp"
-                    android:text="Major"
-                    android:textSize="15dp" />
+                    android:text="@string/Major"
+                    android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/config_major1"
@@ -87,8 +86,9 @@
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@id/config_major_view1"
                     android:inputType="number"
+                    android:labelFor="@id/config_major1"
                     android:singleLine="true"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -103,8 +103,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginTop="7dp"
-                    android:text="Minor"
-                    android:textSize="15dp" />
+                    android:text="@string/Minor"
+                    android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/config_minor1"
@@ -112,8 +112,9 @@
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@id/config_minor_view1"
                     android:inputType="number"
+                    android:labelFor="@id/config_minor1"
                     android:singleLine="true"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
             </RelativeLayout>
         </LinearLayout>
 
@@ -121,10 +122,10 @@
             android:id="@+id/config_rl3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/config_rl2"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
+            android:baselineAligned="false"
             android:orientation="horizontal" >
 
             <RelativeLayout
@@ -139,8 +140,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginTop="7dp"
-                    android:text="MeasuredPower"
-                    android:textSize="15dp" />
+                    android:text="@string/MeasurePower"
+                    android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/config_measured_power1"
@@ -148,8 +149,9 @@
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@id/config_measured_power_view1"
                     android:inputType="numberSigned"
+                    android:labelFor="@id/config_measured_power1"
                     android:singleLine="true"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -164,8 +166,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginTop="7dp"
-                    android:text="TxPower"
-                    android:textSize="15dp" />
+                    android:text="@string/TxPower"
+                    android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/config_txpower1"
@@ -173,8 +175,9 @@
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@id/config_txpower_view1"
                     android:inputType="numberSigned"
+                    android:labelFor="@id/config_txpower1"
                     android:singleLine="true"
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
             </RelativeLayout>
         </LinearLayout>
 
@@ -192,8 +195,8 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="7dp"
-                android:text="发送间隔ms "
-                android:textSize="15dp" />
+                android:text="@string/BroadcastInterval"
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/config_interval"
@@ -201,8 +204,9 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/config_interval_view"
                 android:inputType="number"
+                android:labelFor="@id/config_interval"
                 android:singleLine="true"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -219,8 +223,8 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="7dp"
-                android:text="防篡改密钥 "
-                android:textSize="15dp" />
+                android:text="@string/ConfigKey"
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/config_key"
@@ -228,9 +232,10 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/config_key_view"
                 android:inputType="text"
+                android:labelFor="@id/config_key"
                 android:maxLength="6"
                 android:singleLine="true"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -247,8 +252,8 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="7dp"
-                android:text="设备名称 "
-                android:textSize="15dp" />
+                android:text="@string/DeviceName"
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/config_device_name"
@@ -256,9 +261,10 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/config_device_name_view"
                 android:inputType="text"
+                android:labelFor="@id/config_device_name"
                 android:maxLength="20"
                 android:singleLine="true"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -272,10 +278,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="防篡改模式 "
-                android:textSize="15dp" />
+                android:text="@string/ConfigDefence"
+                android:textSize="15sp" />
 
-            <com.example.skybeaconsdkdemo.widget.CheckSwitchButton
+            <com.skybeacon.demo.widget.CheckSwitchButton
                 android:id="@+id/config_lock_switchbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -295,8 +301,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Led状态 "
-                android:textSize="15dp" />
+                android:text="@string/LedStatus"
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/config_led"
@@ -304,9 +310,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
                 android:layout_toRightOf="@id/config_led_view"
-                android:hint="不变"
+                android:hint="@string/NoChange"
                 android:singleLine="true"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
 
             <Spinner
                 android:id="@+id/config_led_spinner"
@@ -315,22 +321,20 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="4dp"
                 android:clickable="true"
-                android:textSize="15dp" />
+                android:textSize="15sp" />
         </RelativeLayout>
 
         <Button
             android:id="@+id/config_command"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="20dp"
             android:background="#2F8f8f8f"
             android:clickable="true"
             android:onClick="onClick"
-            android:text="配置"
-            android:textSize="20dp" />
+            android:text="@string/Config"
+            android:textSize="20sp" />
     </LinearLayout>
 
 </ScrollView>
