@@ -29,15 +29,15 @@ public final class R {
         public static final int ic_launcher=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f080062;
-        public static final int bt_locate=0x7f08005a;
-        public static final int bt_scan=0x7f080059;
+        public static final int action_settings=0x7f080061;
+        public static final int bt_monitor=0x7f080058;
+        public static final int bt_scan=0x7f080057;
         public static final int config_command=0x7f08004f;
         public static final int config_device_name=0x7f080036;
         public static final int config_device_name_view=0x7f080035;
-        public static final int config_encrypt_key=0x7f080057;
-        public static final int config_encrypt_key_spinner=0x7f080058;
-        public static final int config_encrypt_key_view=0x7f080056;
+        public static final int config_encrypt_key=0x7f080055;
+        public static final int config_encrypt_key_spinner=0x7f080056;
+        public static final int config_encrypt_key_view=0x7f080054;
         public static final int config_encrypt_view1=0x7f08000f;
         public static final int config_encrypt_view2=0x7f08001f;
         public static final int config_encrypt_view3=0x7f08002f;
@@ -117,22 +117,21 @@ public final class R {
         public static final int config_uuid_view1=0x7f080002;
         public static final int config_uuid_view2=0x7f080012;
         public static final int config_uuid_view3=0x7f080022;
-        public static final int device_detail=0x7f08005e;
-        public static final int device_text=0x7f08005d;
-        public static final int device_version=0x7f08005f;
-        public static final int listview_scan=0x7f08005c;
-        public static final int locate_result=0x7f080053;
-        public static final int rl1=0x7f080055;
-        public static final int spinner_broadcast_id_view=0x7f080060;
-        public static final int spinner_broadcast_line=0x7f080061;
+        public static final int device_detail=0x7f08005c;
+        public static final int device_rssi=0x7f08005e;
+        public static final int device_text=0x7f08005b;
+        public static final int device_version=0x7f08005d;
+        public static final int listview_scan=0x7f08005a;
+        public static final int rl1=0x7f080053;
+        public static final int spinner_broadcast_id_view=0x7f08005f;
+        public static final int spinner_broadcast_line=0x7f080060;
         public static final int state_info=0x7f080000;
-        public static final int test_string=0x7f080054;
-        public static final int text_view=0x7f08005b;
+        public static final int text_view=0x7f080059;
     }
     public static final class layout {
-        public static final int activity_config_multi_id=0x7f030000;
-        public static final int activity_config_single_id=0x7f030001;
-        public static final int activity_locate=0x7f030002;
+        public static final int activity_config=0x7f030000;
+        public static final int activity_config_multi_id=0x7f030001;
+        public static final int activity_config_single_id=0x7f030002;
         public static final int activity_main=0x7f030003;
         public static final int activity_monitor=0x7f030004;
         public static final int activity_scan=0x7f030005;

@@ -3,6 +3,7 @@ package com.skybeacon.demo;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,6 +32,7 @@ public class LeDeviceListAdapter extends BaseAdapter {
 		lock = new Object();
 	}
 
+	@SuppressLint("UseValueOf")
 	public void setCheckall(boolean isCheckall) {
 		if (mCheckList == null) {
 			mCheckList = new ArrayList<Integer>();
@@ -102,6 +104,8 @@ public class LeDeviceListAdapter extends BaseAdapter {
 			viewHolder = new ViewHolder();
 			viewHolder.deviceText = (TextView) view
 					.findViewById(R.id.device_text);
+			viewHolder.deviceRssi = (TextView) view
+					.findViewById(R.id.device_rssi);
 			viewHolder.deviceVersion = (TextView) view
 					.findViewById(R.id.device_version);
 			viewHolder.deviceDetail = (TextView) view
@@ -118,11 +122,13 @@ public class LeDeviceListAdapter extends BaseAdapter {
 			viewHolder.deviceVersion.setText("单");
 		}
 		viewHolder.deviceDetail.setText(beacon.detailInfo);
+		viewHolder.deviceRssi.setText(String.valueOf(beacon.rssi));
 		return view;
 	}
 
 	class ViewHolder {
 		TextView deviceText;
+		TextView deviceRssi;
 		TextView deviceVersion;
 		TextView deviceDetail;
 	}

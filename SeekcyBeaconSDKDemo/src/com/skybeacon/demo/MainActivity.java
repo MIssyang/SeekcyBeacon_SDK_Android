@@ -72,6 +72,7 @@ public class MainActivity extends Activity {
 		mKeyList = new ArrayList<String>();
 		mKeyList.add("");
 		mKeyList.add("");
+		mKeyList.add("AB11221498756731BCD7D8E239E765AD52B7139DE87654DAB27394BCD7D792A");
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 				R.layout.spinner_broadcast_id, R.id.spinner_broadcast_id_view,
 				mKeyList);
@@ -112,10 +113,10 @@ public class MainActivity extends Activity {
 			Intent intent1 = new Intent(MainActivity.this, ScanActivity.class);
 			startActivity(intent1);
 			break;
-		case R.id.bt_locate:
-//			SKYBeaconManager.getInstance().setBroadcastKey(passcodeStr);
-//			Intent intent2 = new Intent(MainActivity.this, LocateActivity.class);
-//			startActivity(intent2);
+		case R.id.bt_monitor:
+			SKYBeaconManager.getInstance().setBroadcastKey(passcodeStr);
+			Intent intent2 = new Intent(MainActivity.this, MonitorActivity.class);
+			startActivity(intent2);
 			break;
 		default:
 			break;
